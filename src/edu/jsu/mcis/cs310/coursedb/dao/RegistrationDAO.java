@@ -149,9 +149,9 @@ public class RegistrationDAO {
             
             if (conn.isValid(0)) {
                 
-                String query = "SELECT studentid, termid, crn"
-                            + "FROM registration"
-                            + "WHERE studentid = ? AND termid = ?"
+                String query = "SELECT studentid, termid, crn "
+                            + "FROM registration "
+                            + "WHERE studentid = ? AND termid = ? "
                             + "ORDER BY crn";
                 
                 ps = conn.prepareStatement(query);
